@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privilege Escalation - Exploits Explained</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header, footer {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #bb86fc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #03dac6;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: #bb86fc;
+        }
+
+        section p {
+            line-height: 1.6;
+        }
+
+        footer p {
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Privilege Escalation</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="sqli.html">SQL Injection (SQLi)</a></li>
+                <li><a href="xss.html">Cross-Site Scripting (XSS)</a></li>
+                <li><a href="phishing.html">Phishing</a></li>
+                <li><a href="binary-exploitation.html">Binary Exploitation</a></li>
+                <li><a href="privilege-escalation.html">Privilege Escalation</a></li>
+                <li><a href="ddos.html">DDoS Attacks</a></li>
+                <li><a href="password-attacks.html">Password Attacks</a></li>
+                <li><a href="dark-web.html">Dark Web</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>What is Privilege Escalation?</h2>
+        <p>Privilege escalation is an attack that by taking advantage of a vulnerability (see password attacks, binary exploitation, xss for examples of vulnerabilities) in a program/app the attacker can gain elevated privilege and access resources that are typically restricted to them.</p>
+        <p>Attackers can exploit privilege escalation vulnerabilities to do the following, accessing sensitive data, modifying configurations, or executing privileged commands.</p>
+    </section>
+
+    <section>
+        <h2>Two Types of Privilege Escalation</h2>
+        <p><strong>Vertical Privilege Escalation:</strong> When an attacker gains higher level privileges, like moving from a regular user to an admin user.</p>
+        <p><strong>Horizontal Privilege Escalation:</strong> When an attacker gains another user's privileges without gaining elevated access, such as impersonating another standard user, who might be in a better position to apply vertical privilege escalation.</p>
+    </section>
+
+    <section>
+        <h2>Mitigation Techniques</h2>
+        <p>Common ways to reduce the risk of privilege escalation include:</p>
+        <ul>
+            <li>Using strict access controls and the principle of least privilege.</li>
+            <li>Making sure to regularly update and patch software to fix known vulnerabilities.</li>
+            <li>Requiring multi-factor authentication (MFA).</li>
+            <li>Monitoring and auditing logs to detect and respond to suspicious activity. Often predefined actions that shouldn't be taken are logged and sent to other admins</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Exploits Explained. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
